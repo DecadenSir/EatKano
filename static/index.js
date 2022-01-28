@@ -55,7 +55,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
     }
 
     function modeToString(m) {
-        return m === MODE_NORMAL ? "普通模式" : (m === MODE_ENDLESS ? "无尽模式" : "练习模式");
+        return m === MODE_NORMAL ? "普通照壁" : (m === MODE_ENDLESS ? "无尽照壁" : "欲言又止");
     }
 
     w.changeMode = function(m) {
@@ -441,11 +441,11 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return '试着好好练一下？';
-        if (cps <= 8) return 'TCL';
-        if (cps <= 10)  return 'TQL';
-        if (cps <= 15) return '您';
-        return '人？';
+        if (cps <= 5) return '你被楠哥照壁了';
+        if (cps <= 8) return '你差点被楠哥照壁';
+        if (cps <= 10)  return '你成功照壁了楠哥;
+        if (cps <= 15) return '你狠狠地照壁了楠哥';
+        return '差不多得了';
     }
 
     function toStr(obj) {
