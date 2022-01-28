@@ -443,7 +443,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
 
         if (cps <= 5) return '你被楠哥照壁了';
         if (cps <= 8) return '你差点被楠哥照壁';
-        if (cps <= 10) return '你成功照壁了楠哥;
+        if (cps <= 10) return '你成功照壁了楠哥';
         if (cps <= 15) return '你狠狠地照壁了楠哥';
         return '差不多得了';
     }
